@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 20px;
+}
+h1 {
+  margin-bottom: 20px;
+}
+button {
+  border: none;
+  padding: 10px 20px;
+  width: min-content;
+  margin: 0 auto;
+  background-color: gray;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+button:active {
+  transform: scale(0.9);
+}
+input {
+  padding: 10px;
+}
+label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.bookmark-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  gap: 5px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px;
+}
+
+.bookmark-list {
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.bookmark {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  padding: 10px;
+}
+.bookmark h3 {
+  cursor: pointer;
+}
+
+.bookmark button {
+  background-color: red;
+}
+
+.bookmark-list h2 {
+  margin-bottom: 20px;
+}
+
+.url {
+  font-size: 0.9em;
+  overflow: hidden; /* Hide any overflowing content */
+  white-space: nowrap; /* Prevent line breaks */
+  text-overflow: ellipsis;
+}
+
+.bookmark .title:hover {
+  color: blue;
+}
